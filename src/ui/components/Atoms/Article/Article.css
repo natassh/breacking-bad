@@ -1,0 +1,27 @@
+.phrase {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 800px;
+}
+.phrase h1::before {
+  content: open-quote;
+  font-size: 10rem;
+  color: black;
+  position: absolute;
+  left: -1rem;
+  top: -2rem;
+}
+.phrase h1 {
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  position: relative;
+  padding-left: 4rem;
+}
+.phrase p {
+  font-family: 'Handlee', cursive;
+  font-size: 1.6rem;
+  color: #666;
+  text-align: right;
+  margin-top: 2rem;
+}

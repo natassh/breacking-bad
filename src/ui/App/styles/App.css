@@ -33,39 +33,11 @@ body {
 #root {
   width: 100%;
 }
-.contenedor {
+.App {
   display: flex;
   align-items: center;
   padding-top: 10rem;
   flex-direction: column;
-}
-
-.frase {
-  padding: 3rem;
-  border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 1);
-  max-width: 800px;
-}
-.frase h1::before {
-  content: open-quote;
-  font-size: 10rem;
-  color: black;
-  position: absolute;
-  left: -1rem;
-  top: -2rem;
-}
-.frase h1 {
-  font-family: 'Staatliches', cursive;
-  text-align: center;
-  position: relative;
-  padding-left: 4rem;
-}
-.frase p {
-  font-family: 'Handlee', cursive;
-  font-size: 1.6rem;
-  color: #666;
-  text-align: right;
-  margin-top: 2rem;
 }
 
 button {

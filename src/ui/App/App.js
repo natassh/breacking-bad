@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getDataPhrase } from '../../core/services/api';
 import Article from '../components/Atoms/Article';
+import Button from '../components/Atoms/Button';
 
 import './styles/App.css';
 
@@ -13,14 +14,13 @@ function App() {
 
   const getApiPhrase = async () => {
     const phrase = await getDataPhrase();
-    //console.log(phrase[0]);
     getPhrase(phrase[0]);
   };
 
   return (
     <div className="App">
       <Article phrase={phrase} className="phrase" />
-      <button onClick={getApiPhrase}>Generar Nueva</button>
+      <Button onClick={getApiPhrase} />
     </div>
   );
 }

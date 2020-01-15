@@ -1,27 +1,40 @@
-.phrase {
+.Quote {
   padding: 3rem;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 1);
-  max-width: 800px;
+  max-width: 50rem;
 }
-.phrase h1::before {
+blockquote::before {
   content: open-quote;
   font-size: 10rem;
   color: black;
   position: absolute;
   left: -1rem;
-  top: -2rem;
+  top: -2.8rem;
 }
-.phrase h1 {
+blockquote {
   font-family: 'Staatliches', cursive;
   text-align: center;
   position: relative;
   padding-left: 4rem;
+  font-size: 1.5rem;
 }
-.phrase p {
+figcaption {
+  margin-top: 2rem;
+  text-align: right;
+}
+cite {
   font-family: 'Handlee', cursive;
   font-size: 1.6rem;
   color: #666;
-  text-align: right;
-  margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .Quote {
+    margin: 0 2rem 0 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .Quote {
+    padding: 2rem;
+  }
 }

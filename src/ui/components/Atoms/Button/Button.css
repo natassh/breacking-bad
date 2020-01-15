@@ -1,0 +1,27 @@
+button {
+  background: -webkit-linear-gradient(
+    top left,
+    #007d35 0%,
+    #007d35 40%,
+    #0f574e 100%
+  );
+
+  background-size: 300px;
+
+  font-family: 'Staatliches', cursive;
+  color: white;
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border: 2px solid black;
+}
+button:hover {
+  cursor: pointer;
+  background-size: 400px;
+}
+@media screen and (max-width: 425px) {
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+  }
+}

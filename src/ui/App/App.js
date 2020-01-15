@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getDataPhrase } from '../../core/services/api';
-import Article from '../components/Atoms/Article';
+import { getQuote } from '../../core/services/quote';
+import Logo from '../components/Atoms/Logo';
+import Quote from '../components/Atoms/Quote';
 import Button from '../components/Atoms/Button';
 
 import './styles/App.css';
@@ -9,18 +10,19 @@ function App() {
   const [phrase, getPhrase] = useState({});
 
   useEffect(() => {
-    getApiPhrase();
+    handleOnClick();
   }, []);
 
-  const getApiPhrase = async () => {
-    const phrase = await getDataPhrase();
+  const handleOnClick = async () => {
+    const phrase = await getQuote();
     getPhrase(phrase[0]);
   };
 
   return (
     <div className="App">
-      <Article phrase={phrase} className="phrase" />
-      <Button onClick={getApiPhrase} />
+      <Logo />
+      <Quote phrase={phrase} className="Quote" />
+      <Button onClick={handleOnClick} />
     </div>
   );
 }

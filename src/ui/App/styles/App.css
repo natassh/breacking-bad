@@ -15,49 +15,18 @@ html {
   height: 100%;
 }
 body {
-  background-image: url(../../assets/images/logo.svg),
-    -webkit-linear-gradient(top left, #007d35 0%, #007d35 40%, #0f574e 100%);
-  min-height: 100%;
-  background-position: center 80px, center center;
-  background-repeat: no-repeat;
-  background-size: 400px, 100% 100%;
-  display: flex;
-  align-items: flex-end;
-}
-@media (min-width: 768px) {
-  body {
-    align-items: center;
-  }
-}
-
-#root {
-  width: 100%;
-}
-.App {
-  display: flex;
-  align-items: center;
-  padding-top: 10rem;
-  flex-direction: column;
-}
-
-button {
   background: -webkit-linear-gradient(
     top left,
     #007d35 0%,
     #007d35 40%,
     #0f574e 100%
   );
-
-  background-size: 300px;
-
-  font-family: 'Staatliches', cursive;
-  color: white;
-  margin-top: 3rem;
-  padding: 1rem 3rem;
-  font-size: 2rem;
-  border: 2px solid black;
 }
-button:hover {
-  cursor: pointer;
-  background-size: 400px;
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }

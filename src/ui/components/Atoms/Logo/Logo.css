@@ -1,0 +1,19 @@
+.logo {
+  width: 26rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.logo img {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .logo {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    width: 14rem;
+  }
+}
